@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="/style.css">
     
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="/verbs.js"></script>
+    <script src="/script.js"></script>
   </head>  
-  <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
-  </body>
+  <body onload="start()">
+   <h2 id="ru_word">Word</h2>
+    <button class="button" onclick="know()">Know</button>
+    <button class="button" onclick="dontKnow()">Don't know</button>
+        
+    <table id="results">
+        <thead>
+            <tr>
+                <th>Ru</th>
+                <th>En</th>
+                <th>Known</th>
+            </tr>
+        </thead>
+    </table>
+    </body>
 </html>
