@@ -11,5 +11,9 @@ h1 {
 }
 
 .button {
-  min-height: 14pt;
+  font-size: 14pt;
+}
+
+.results-table{
+  margin-top: 50px;
 }
